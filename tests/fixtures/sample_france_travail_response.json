@@ -1,0 +1,142 @@
+{
+  "hasNext": false,
+  "nbResultats": 3,
+  "resultats": [
+    {
+      "id": "FT-001",
+      "intitule": "Développeur Full Stack React/Node.js",
+      "description": "Au sein de notre équipe produit, vous développerez de nouvelles fonctionnalités sur notre plateforme SaaS. Vous maîtrisez React, TypeScript et Node.js. Expérience avec PostgreSQL et Docker souhaitée.",
+      "dateCreation": "2024-11-01T00:00:00+01:00",
+      "dateActualisation": "2024-11-02T00:00:00+01:00",
+      "lieuTravail": {
+        "libelle": "75 - Paris",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "codePostal": "75008",
+        "commune": "75108"
+      },
+      "romeCode": "M1805",
+      "romeLibelle": "Études et développement informatique",
+      "appellationlibelle": "Développeur / Développeuse full-stack",
+      "entreprise": {
+        "nom": "TechCorp SAS",
+        "description": "Éditeur de logiciels SaaS pour les PME",
+        "logo": "https://example.com/logo.png",
+        "url": "https://techcorp.fr"
+      },
+      "typeContrat": "CDI",
+      "typeContratLibelle": "Contrat à durée indéterminée",
+      "natureContrat": "Contrat travail",
+      "experienceExige": "E",
+      "experienceLibelle": "3 ans",
+      "competences": [
+        {"libelle": "React", "exigence": "E"},
+        {"libelle": "Node.js", "exigence": "E"},
+        {"libelle": "TypeScript", "exigence": "S"},
+        {"libelle": "PostgreSQL", "exigence": "S"}
+      ],
+      "salaire": {
+        "libelle": "Annuel de 45000 à 60000 EUR",
+        "min": 45000,
+        "max": 60000
+      },
+      "dureeTravailLibelle": "35H Travail en journée",
+      "alternance": false,
+      "nombrePostes": 1,
+      "accessibleTH": false,
+      "qualificationCode": "9",
+      "qualificationLibelle": "Cadre",
+      "secteurActivite": "62",
+      "secteurActiviteLibelle": "Programmation, conseil et autres activités informatiques",
+      "qualitesProfessionnelles": [
+        {"libelle": "Autonomie", "description": "Capacité à travailler seul"},
+        {"libelle": "Rigueur", "description": "Précision et organisation"}
+      ]
+    },
+    {
+      "id": "FT-002",
+      "intitule": "Ingénieur Data / Data Scientist",
+      "description": "Nous recherchons un Data Scientist pour rejoindre notre équipe R&D. Vous construirez des modèles prédictifs et des tableaux de bord analytiques. Maîtrise de Python, scikit-learn et SQL requise.",
+      "dateCreation": "2024-11-03T00:00:00+01:00",
+      "dateActualisation": "2024-11-04T00:00:00+01:00",
+      "lieuTravail": {
+        "libelle": "69 - Lyon",
+        "latitude": 45.7640,
+        "longitude": 4.8357,
+        "codePostal": "69002",
+        "commune": "69123"
+      },
+      "romeCode": "M1805",
+      "romeLibelle": "Études et développement informatique",
+      "appellationlibelle": "Data scientist",
+      "entreprise": {
+        "nom": "DataInsight Lyon",
+        "description": "Cabinet conseil en data science et intelligence artificielle"
+      },
+      "typeContrat": "CDI",
+      "typeContratLibelle": "Contrat à durée indéterminée",
+      "natureContrat": "Contrat travail",
+      "experienceExige": "E",
+      "experienceLibelle": "2 ans",
+      "competences": [
+        {"libelle": "Python", "exigence": "E"},
+        {"libelle": "Machine Learning", "exigence": "E"},
+        {"libelle": "SQL", "exigence": "E"},
+        {"libelle": "Spark", "exigence": "S"}
+      ],
+      "salaire": {
+        "libelle": "Annuel de 42000 à 55000 EUR",
+        "min": 42000,
+        "max": 55000
+      },
+      "dureeTravailLibelle": "35H Travail en journée",
+      "alternance": false,
+      "nombrePostes": 2,
+      "accessibleTH": true,
+      "qualificationCode": "9",
+      "qualificationLibelle": "Cadre"
+    },
+    {
+      "id": "FT-003",
+      "intitule": "Chef de Projet Digital / Product Owner",
+      "description": "En tant que Product Owner, vous définirez et prioriserez le backlog de notre application mobile. Vous travaillerez en méthode Agile/Scrum avec nos équipes de développement. Expérience en gestion de produit digital exigée.",
+      "dateCreation": "2024-11-05T00:00:00+01:00",
+      "dateActualisation": "2024-11-05T00:00:00+01:00",
+      "lieuTravail": {
+        "libelle": "33 - Bordeaux",
+        "latitude": 44.8378,
+        "longitude": -0.5792,
+        "codePostal": "33000",
+        "commune": "33063"
+      },
+      "romeCode": "M1805",
+      "romeLibelle": "Études et développement informatique",
+      "appellationlibelle": "Chef de projet / Cheffe de projet informatique",
+      "entreprise": {
+        "nom": "Bordeaux Digital Agency",
+        "description": "Agence spécialisée dans la transformation digitale des entreprises"
+      },
+      "typeContrat": "CDD",
+      "typeContratLibelle": "Contrat à durée déterminée",
+      "natureContrat": "Contrat travail",
+      "experienceExige": "E",
+      "experienceLibelle": "5 ans",
+      "competences": [
+        {"libelle": "Agile / Scrum", "exigence": "E"},
+        {"libelle": "Gestion de projet", "exigence": "E"},
+        {"libelle": "JIRA", "exigence": "S"}
+      ],
+      "salaire": {
+        "libelle": "Annuel de 48000 à 58000 EUR",
+        "min": 48000,
+        "max": 58000
+      },
+      "dureeTravailLibelle": "35H Travail en journée",
+      "alternance": false,
+      "nombrePostes": 1,
+      "accessibleTH": false,
+      "qualificationCode": "9",
+      "qualificationLibelle": "Cadre"
+    }
+  ]
+}
