@@ -89,7 +89,20 @@ const features = [
   },
 ];
 
-const pricingTiers = [
+interface PricingTier {
+  id: string;
+  name: string;
+  tagline: string;
+  monthlyPrice: number | null;
+  annualPrice: number | null;
+  seats: number | string;
+  features: string[];
+  notIncluded: string[];
+  highlighted?: boolean;
+  badge?: string;
+}
+
+const pricingTiers: PricingTier[] = [
   {
     id: 'starter',
     name: 'Starter',
@@ -165,7 +178,7 @@ const pricingTiers = [
     tagline: 'For large organisations & platforms',
     monthlyPrice: null,
     annualPrice: null,
-    seats: 'unlimited' as const,
+    seats: 'unlimited',
     features: [
       'Everything in Team',
       'Unlimited seats',

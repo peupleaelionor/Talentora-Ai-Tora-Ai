@@ -159,7 +159,6 @@ export function TrendChart({
   }
 
   const sharedLineProps = (s: TimeSeries, idx: number) => ({
-    key: s.id,
     type: 'monotone' as const,
     dataKey: s.name,
     stroke: s.color ?? colors[idx % colors.length],
@@ -251,7 +250,7 @@ export function TrendChart({
         <LineChart data={data}>
           {sharedCartesian}
           {series.map((s, idx) => (
-            <Line {...sharedLineProps(s, idx)} />
+            <Line key={s.id} {...sharedLineProps(s, idx)} />
           ))}
         </LineChart>
       );
@@ -262,7 +261,7 @@ export function TrendChart({
         {gradientDefs}
         {sharedCartesian}
         {series.map((s, idx) => (
-          <Area {...sharedAreaProps(s, idx)} />
+          <Area key={s.id} {...sharedAreaProps(s, idx)} />
         ))}
       </AreaChart>
     );
