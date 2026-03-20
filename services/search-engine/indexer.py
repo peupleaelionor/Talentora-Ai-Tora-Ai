@@ -16,7 +16,8 @@ import structlog
 log = structlog.get_logger(__name__)
 
 # Embedding dimension for the configured model
-_DEFAULT_DIM = 384  # all-MiniLM-L6-v2 output size
+# paraphrase-multilingual-MiniLM-L12-v2 outputs 384-dimensional vectors
+_DEFAULT_DIM = 384
 
 # Environment-driven backend: "memory" | "pgvector" | "qdrant" | "pinecone"
 _BACKEND = os.environ.get("SEARCH_BACKEND", "memory").lower()

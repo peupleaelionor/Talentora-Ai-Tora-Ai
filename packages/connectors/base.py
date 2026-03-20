@@ -12,7 +12,7 @@ import hashlib
 import json
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 # ---------------------------------------------------------------------------
@@ -27,7 +27,7 @@ class RawJob:
     source_id: str
     external_id: str
     raw_data: dict[str, Any]
-    fetched_at: datetime = field(default_factory=datetime.utcnow)
+    fetched_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     source_url: str | None = None
     raw_id: str | None = None  # populated after storage
 
