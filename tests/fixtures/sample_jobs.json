@@ -1,0 +1,142 @@
+[
+  {
+    "id": "job-001",
+    "title": "Senior Backend Developer Python",
+    "company": {
+      "name": "Contentsquare",
+      "size": "1001-5000",
+      "industry": "saas"
+    },
+    "location": {
+      "city": "Paris",
+      "department": "75",
+      "region": "Île-de-France",
+      "remote": "hybrid"
+    },
+    "contract_type": "CDI",
+    "salary": {
+      "min": 60000,
+      "max": 80000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "description": "Rejoignez notre équipe backend pour construire des APIs haute performance en Python/FastAPI. Vous travaillerez sur notre plateforme d'analytics digitale utilisée par des milliers d'entreprises.",
+    "skills": ["Python", "FastAPI", "PostgreSQL", "Redis", "Kubernetes"],
+    "seniority": "senior",
+    "role_category": "engineering",
+    "posted_at": "2024-11-01T09:00:00Z",
+    "source": "linkedin"
+  },
+  {
+    "id": "job-002",
+    "title": "Data Engineer",
+    "company": {
+      "name": "Qonto",
+      "size": "501-1000",
+      "industry": "fintech"
+    },
+    "location": {
+      "city": "Paris",
+      "department": "75",
+      "region": "Île-de-France",
+      "remote": "remote"
+    },
+    "contract_type": "CDI",
+    "salary": {
+      "min": 55000,
+      "max": 70000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "description": "En tant que Data Engineer chez Qonto, vous construirez et maintiendrez nos pipelines de données, gérerez notre data warehouse Snowflake et développerez des modèles dbt pour nos équipes analytics.",
+    "skills": ["Python", "Spark", "Snowflake", "dbt", "Airflow", "SQL"],
+    "seniority": "mid",
+    "role_category": "data",
+    "posted_at": "2024-11-02T10:30:00Z",
+    "source": "france_travail"
+  },
+  {
+    "id": "job-003",
+    "title": "Product Manager - Growth",
+    "company": {
+      "name": "Doctolib",
+      "size": "1001-5000",
+      "industry": "healthcare"
+    },
+    "location": {
+      "city": "Levallois-Perret",
+      "department": "92",
+      "region": "Île-de-France",
+      "remote": "hybrid"
+    },
+    "contract_type": "CDI",
+    "salary": {
+      "min": 65000,
+      "max": 85000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "description": "Vous piloterez la stratégie de croissance de Doctolib en définissant la roadmap produit, en travaillant avec les équipes engineering et design pour maximiser l'acquisition et la rétention utilisateurs.",
+    "skills": ["Product Strategy", "Data Analysis", "A/B Testing", "Agile", "SQL"],
+    "seniority": "mid",
+    "role_category": "product",
+    "posted_at": "2024-11-03T08:00:00Z",
+    "source": "welcome_to_the_jungle"
+  },
+  {
+    "id": "job-004",
+    "title": "Senior DevOps Engineer",
+    "company": {
+      "name": "Mirakl",
+      "size": "501-1000",
+      "industry": "ecommerce"
+    },
+    "location": {
+      "city": "Lyon",
+      "department": "69",
+      "region": "Auvergne-Rhône-Alpes",
+      "remote": "hybrid"
+    },
+    "contract_type": "CDI",
+    "salary": {
+      "min": 58000,
+      "max": 75000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "description": "Rejoignez l'équipe Platform Engineering de Mirakl pour automatiser et fiabiliser notre infrastructure cloud AWS, gérer nos clusters Kubernetes et mettre en place des pratiques GitOps avancées.",
+    "skills": ["Kubernetes", "Terraform", "AWS", "Helm", "ArgoCD", "Prometheus"],
+    "seniority": "senior",
+    "role_category": "devops",
+    "posted_at": "2024-11-04T11:00:00Z",
+    "source": "linkedin"
+  },
+  {
+    "id": "job-005",
+    "title": "Machine Learning Engineer",
+    "company": {
+      "name": "Meero",
+      "size": "201-500",
+      "industry": "saas"
+    },
+    "location": {
+      "city": "Bordeaux",
+      "department": "33",
+      "region": "Nouvelle-Aquitaine",
+      "remote": "remote"
+    },
+    "contract_type": "CDD",
+    "salary": {
+      "min": 50000,
+      "max": 65000,
+      "currency": "EUR",
+      "period": "annual"
+    },
+    "description": "Développez et déployez des modèles de vision par ordinateur pour notre plateforme d'édition photo automatisée. Vous travaillerez sur des pipelines ML de bout en bout, du prototypage jusqu'au déploiement en production.",
+    "skills": ["Python", "PyTorch", "MLflow", "Docker", "OpenCV", "GCP"],
+    "seniority": "mid",
+    "role_category": "ml",
+    "posted_at": "2024-11-05T14:00:00Z",
+    "source": "france_travail"
+  }
+]
