@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   CSS Custom Properties — Design System Tokens
+   ───────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary */
+    --primary: 245 58% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary */
+    --secondary: 215 19% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent */
+    --accent: 263 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Borders */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 245 58% 51%;
+
+    /* Radius */
+    --radius: 0.625rem;
+
+    /* Chart colors */
+    --chart-1: 245 58% 51%;
+    --chart-2: 263 70% 50%;
+    --chart-3: 215 64% 50%;
+    --chart-4: 160 60% 45%;
+    --chart-5: 38 92% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 7%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 7%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 245 58% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 19% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 263 70% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 245 58% 60%;
+  }
+
+  /* ── Typography reset ── */
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-variation-settings: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Heading scale ── */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  h4 { @apply text-xl md:text-2xl; }
+  h5 { @apply text-lg md:text-xl; }
+  h6 { @apply text-base md:text-lg; }
+
+  /* ── Focus visible ── */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* ── Selection ── */
+  ::selection {
+    @apply bg-primary-200 text-primary-900;
+  }
+
+  /* ── Scrollbar (Webkit) ── */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-secondary-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary-300 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary-400;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Component Utilities
+   ───────────────────────────────────────────── */
+@layer components {
+  /* Container */
+  .container-tight {
+    @apply mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  .section-sm {
+    @apply py-8 md:py-12 lg:py-16;
+  }
+
+  /* Glass morphism card */
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+  .glass-dark {
+    @apply bg-slate-900/80 backdrop-blur-md border border-white/10;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 via-accent-600 to-primary-500 bg-clip-text text-transparent;
+  }
+  .text-gradient-cool {
+    @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+  }
+
+  /* Dot / grid backgrounds */
+  .bg-dots {
+    background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(226,232,240,0.5) 1px, transparent 1px),
+      linear-gradient(to right, rgba(226,232,240,0.5) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Shimmer loading */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.5) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+
+  /* Stat counter */
+  .stat-number {
+    @apply font-heading font-bold tabular-nums;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Badge variants */
+  .badge-outline {
+    @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  /* Divider with label */
+  .divider-label {
+    @apply relative flex items-center gap-4 text-sm text-muted-foreground;
+  }
+  .divider-label::before,
+  .divider-label::after {
+    @apply flex-1 border-t border-border;
+    content: '';
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Utility extras
+   ───────────────────────────────────────────── */
+@layer utilities {
+  /* Perspective for 3D transforms */
+  .perspective {
+    perspective: 1000px;
+  }
+  .perspective-sm {
+    perspective: 600px;
+  }
+
+  /* Hide scrollbar but keep scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Balanced text wrapping */
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Numeric proportional */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Safe area padding */
+  .safe-top    { padding-top:    env(safe-area-inset-top); }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  .safe-left   { padding-left:   env(safe-area-inset-left); }
+  .safe-right  { padding-right:  env(safe-area-inset-right); }
+
+  /* Truncate multi-line */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
